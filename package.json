@@ -1,5 +1,5 @@
 {
-  "main": "./lib/main.js",
+  "main": "./lib/exports.js",
   "name": "chromium-pickle-js",
   "description": "Binary value packing and unpacking",
   "version": "0.2.0",
@@ -15,6 +15,17 @@
   },
   "bugs": {
     "url": "https://github.com/atom/node-chromium-pickle-js/issues"
+  },
+  "scripts": {
+    "prepublish": "grunt coffee"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-coffeelint": "0.0.6",
+    "grunt-contrib-coffee": "~0.6.6",
+    "grunt-cli": "~0.1.7",
+    "coffee-script": "~1.6.2",
+    "rimraf": "~2.1.4"
   },
   "dependencies": {
   }

@@ -1,0 +1,8 @@
+/build
+/spec
+*.coffee
+*.log
+*~
+npm-debug.log
+.node-version
+.npmignore
