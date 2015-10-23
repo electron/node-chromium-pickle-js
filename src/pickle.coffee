@@ -141,8 +141,10 @@ class Pickle
     @writeBytes value, SIZE_DOUBLE, Buffer::writeDoubleLE
 
   writeString: (value) ->
-    return false unless @writeInt value.length
-    @writeBytes value, value.length
+    length = Buffer.byteLength(value, 'utf8')
+
+    return false unless @writeInt length
+    @writeBytes value, length
 
   setPayloadSize: (payloadSize) ->
     @header.writeUInt32LE payloadSize, 0
