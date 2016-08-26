@@ -3,30 +3,19 @@
   "name": "chromium-pickle-js",
   "description": "Binary value packing and unpacking",
   "version": "0.1.0",
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://github.com/atom/node-chromium-pickle-js/raw/master/LICENSE"
-    }
-  ],
+  "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/atom/node-chromium-pickle-js.git"
+    "url": "https://github.com/electron/node-chromium-pickle-js.git"
   },
   "bugs": {
-    "url": "https://github.com/atom/node-chromium-pickle-js/issues"
+    "url": "https://github.com/electron/node-chromium-pickle-js/issues"
   },
   "scripts": {
-    "prepublish": "grunt coffee"
+    "test": "mocha test && standard"
   },
   "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-coffeelint": "0.0.6",
-    "grunt-contrib-coffee": "~0.6.6",
-    "grunt-cli": "~0.1.7",
-    "coffee-script": "~1.6.2",
-    "rimraf": "~2.1.4"
-  },
-  "dependencies": {
+    "mocha": "^3.0.2",
+    "standard": "^8.0.0"
   }
 }

@@ -1,8 +1,8 @@
 /build
-/spec
-*.coffee
+/test
 *.log
 *~
 npm-debug.log
 .node-version
 .npmignore
+.travis.yml
