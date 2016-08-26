@@ -10,5 +10,11 @@
   },
   "bugs": {
     "url": "https://github.com/electron/node-chromium-pickle-js/issues"
+  },
+  "scripts": {
+    "test": "mocha test"
+  },
+  "devDependencies": {
+    "mocha": "^3.0.2"
   }
 }
