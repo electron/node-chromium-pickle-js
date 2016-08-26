@@ -1,6 +1,9 @@
 var assert = require('assert')
 var Pickle = require('..')
 
+var describe = global.describe
+var it = global.it
+
 describe('Pickle', function () {
   it('supports multi-byte characters', function () {
     var write = Pickle.createEmpty()
